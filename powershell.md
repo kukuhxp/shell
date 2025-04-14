@@ -1,6 +1,3 @@
-# **WINDOWS COMMAND**
-*Use these some command to use Terminal.*
-
 > Checking Path Location:
 pwd
 

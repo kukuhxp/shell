@@ -1,6 +1,3 @@
-## **HEROKU COMMAND**
-*Use these some command to use Heroku.*
-
 > Login to Heroku Server:
 heroku login
 heroku login -i

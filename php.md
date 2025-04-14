@@ -1,6 +1,3 @@
-# ** TERMUX COMMAND**
-*Use these some command to use PHP Comamnd in Shell*
-
 > Checking The PHP Versiom:
 php -v
 

@@ -1,6 +1,3 @@
-## **GIT COMMAND**
-*Use these some command to use Git.*
-
 > Checking The Git Version:
 git -v
 
@@ -94,8 +91,8 @@ git reset --hard [commit ID]
 git log
 
 > Setting The User Global:
-git config --global user.name [github username]
-git config --global use email [github email]
+git config --global user.name "[github username]"
+git config --global use email "[github email]"
 
 > Checking Git Configuration:
 git config --list

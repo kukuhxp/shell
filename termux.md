@@ -1,6 +1,3 @@
-# ** TERMUX COMMAND**
-*Use these some command to use Termux*
-
 > Getting All Updates
 apt-get updatw
 
