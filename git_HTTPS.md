@@ -1,9 +1,6 @@
+BASIC COMMAND
 > Checking The Git Version:
 git -v
-
-> Configuring The Git:
-git config --global user.name "Nama Kamu"
-git config --global user.email "email@example.com"
 
 > Creating a New Git Repo:
 git init
@@ -74,12 +71,8 @@ git merge [your another repo]
 > Pulling a Repo from GitHub:
 git pull [remote's name] [branch's name]
 
-> Pulling a Repo from GitHub (Non-fast-forward Issue):
-git pull [remote's name] [branch's name]  --rebase
-
-> Adding a Directory to Configuration (Dubious Ownership Issue):
-git config --global --add safe.directory [repo location]
-git config --global --add safe.directory /storage/emulated/0/[folder name]
+> Showing Commit Log:
+git log
 
 > Restoring a File:
 git checkout -- [file name]
@@ -87,9 +80,15 @@ git checkout -- [file name]
 > Restoring a File to Beginning Commit:
 git reset --hard [commit ID]
 
-> Showing Commit Log:
-git log
+FIXING ISSUES
+> Pulling a Repo from GitHub (Non-fast-forward Issue):
+git pull [remote's name] [branch's name]  --rebase
 
+> Adding a Directory to Configuration (Dubious Ownership Issue):
+git config --global --add safe.directory [repo location]
+git config --global --add safe.directory /storage/emulated/0/[folder name]
+
+GLOBAL SETTINGS
 > Setting The User Global:
 git config --global user.name "[github username]"
 git config --global use email "[github email]"
@@ -97,15 +96,21 @@ git config --global use email "[github email]"
 > Checking Git Configuration:
 git config --list
 
-> Unsetting and Deleting The Credentials Helper:
-git config --global --unset credential.helper
+> Deleting The Credentials Helper
 rm ~/.git-credentials
+git credential-cache exit
+
+> Change The Remote PAT
+git remote set-url origin https://kukuhxp:[PAT]@github.com/kukuhxp/_shell_cmd.git
+
+> Saving The Personal Access Tokens (PAT):
+git config --global credential.helper store
+
+> Unsetting The Credentials Helper:
+git config --global --unset credential.helper
 
 > Getting The Password of Repository:
     *  Go to: https://github.com/settings/tokens
     *  Select "Personal access tokens" > "Tokens classic" -> "Generate new token (classic)"
     *  In "Select scopes", checking the "repo" option
     *  Click "Generate token"
-
-> Saving The Personal Access Tokens (PAT):
-git config --global credential.helper store
