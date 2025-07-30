@@ -1,5 +1,5 @@
 ------------------------------------------------------------------
-BASIC COMMAND
+BASIC COMMANDS
 ------------------------------------------------------------------
 > Checking The Git Version:
 git -v
@@ -11,6 +11,7 @@ git init
 git status
 
 > Adding Files to The Staging Environment:
+Pastikan tidak ada folder .git (hidden) di sub-folder
 git add [file's name].[file format]
 git add --all
 git add -A
@@ -132,3 +133,11 @@ GETTING THE PASSWORD OF REPOSITORY
 2. Select "Personal access tokens" > "Tokens classic" -> "Generate new token (classic)"
 3. In "Select scopes", checking the "repo" option
 4. Click "Generate token"
+------------------------------------------------------------------
+EDIT THE SAFE DIRECTORY
+------------------------------------------------------------------
+1. nano ~/.gitconfig
+2. Edit by using direction button on Termux
+3. Shift -> CTRL -> o
+4. Shift -> CTRL -> m
+5. Shift -> CTRL -> x
