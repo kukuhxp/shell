@@ -1,5 +1,5 @@
 -------------------------------------------------------------------
-BASIC COMMAND
+TERMUX COMMAND
 -------------------------------------------------------------------
 > Giving Access to File System
 termux-setup-storage
